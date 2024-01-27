@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load my_tags %}
 
 
 {% block content %}
@@ -17,7 +16,7 @@
             <div class="card-header">
                 <h4 class="my-0 font-weight-normal">{{ object.name_product | title }}</h4>
                 </p>
-                <img src="{% mediapath object.image %}" style="width:200px; height:150px;" />
+                <img src="{ % mediapath object.image % }" style="width:200px; height:150px;" />
             </div>
             <div class="card-body">
                 <h1 class="card-title pricing-card-title">{{object.price}} P</h1>
